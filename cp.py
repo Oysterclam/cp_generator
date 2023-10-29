@@ -5,6 +5,7 @@ import math
 from scipy.optimize import minimize
 from itertools import product
 import svgwrite
+from cairosvg import svg2png
 
 
 class Vertex():
@@ -732,10 +733,11 @@ class CreasePattern():
         print("No choice worked")
         return []
 
-    def export_svg(self, filename):
-        # export the square and crease pattern to an svg file
-        # first, normalize the crease pattern
-        self.scale(100)
+    def get_svg(self, length):
+        # return the svg of the crease pattern
+        # first, scale the crease pattern by size
+        self.normalize()
+        self.scale(length)
         # get the coordinates of the square
         square_coords = []
         square_coords.append([0, 0])
@@ -744,7 +746,7 @@ class CreasePattern():
         square_coords.append([0, self.side])
 
         # start the svg file
-        dwg = svgwrite.Drawing('square.svg', profile='tiny')
+        dwg = svgwrite.Drawing('square.svg', profile='tiny', size=(length, length))
 
         # draw the square
         dwg.add(dwg.polygon(square_coords, fill='none', stroke='black'))
@@ -760,5 +762,13 @@ class CreasePattern():
                 color = 'black'
             dwg.add(dwg.line((f.v1.x, f.v1.y), (f.v2.x, f.v2.y), stroke=color))
 
+        return dwg
+    def export_svg(self, filename):
+        # export the square and crease pattern to an svg file
+
+        dwg = self.get_svg(300)
         # export the svg file with the given filename
         dwg.saveas(filename)
+
+        # convert to png too
+        svg2png(url=filename, write_to=filename[:-4] + ".png")

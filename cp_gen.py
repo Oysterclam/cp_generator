@@ -7,7 +7,7 @@ root = Tk()
 root.title("CP Generator")
 
 # set true to label vertices
-label = False
+show_labels = False
 
 # Main Frame
 mainframe = ttk.Frame(root, padding="3 3 12 12")
@@ -84,14 +84,14 @@ def make_cp():
     cp.triangulate()
     cp.evenize_vertices()
     cp.remove_edge_folds()
-    if label:
+    if show_labels:
         label_vertices(cp, canvas)
     draw_cp(cp, canvas)
 
 def optimize_cp():
     res = cp.optimize()
     canvas.delete("all")
-    if label:
+    if show_labels:
         label_vertices(cp, canvas)
     draw_cp(cp, canvas)
     update_text(res.message)
@@ -99,7 +99,7 @@ def optimize_cp():
 def assign_mv():
     res = cp.assign_mv()
     canvas.delete("all")
-    if label:
+    if show_labels:
         label_vertices(cp, canvas)
     draw_cp(cp, canvas)
     if res == []:
