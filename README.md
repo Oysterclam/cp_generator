@@ -9,6 +9,10 @@ Firstly, Mitani did not prove that the edge-removing procedure in step 3 would a
 
 Secondly, Mitani uses a brute-force search to find mountain-valley assignment which satisfies Maekawa's Theorem. We improve slightly upon this procedure, by adapting the procedure in [[Bern and Hayes 1996]](http://graphics8.nytimes.com/packages/blogs/images/BernHayes-1.origami.SODA96.pdf). Note that the procedure only proves the existence of a satisfying assignment, so we still need to do some search to find it. However, the search space is greatly decreased by this procedure.
 
+Here is what the tkinter interface looks like as of now:
+
+![image info](./examples/interface.png)
+
 I ran a hundred trials for each number of vertices, and it seems that the success rate quickly drops the mroe vertices you add. The max iterations I set in these trials was 100, and iterating more times does result in a higher success rate, but it does take longer (you can press the button multiple times in the tkinter face to keep on optimizing).
 
 | Number of Vertices| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
