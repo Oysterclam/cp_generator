@@ -13,7 +13,7 @@ Here is what the tkinter interface looks like as of now:
 
 ![image info](./examples/interface.png)
 
-I ran a hundred trials for each number of vertices, and it seems that the success rate quickly drops the mroe vertices you add. The max iterations I set in these trials was 100, and iterating more times does result in a higher success rate, but it does take longer (you can press the button multiple times in the tkinter face to keep on optimizing).
+I ran a hundred trials for each number of vertices, and it seems that the success rate quickly drops the more vertices you add. The max iterations I set in these trials was 100, and iterating more times does result in a higher success rate, but it does take longer (you can press the button multiple times in the tkinter face to keep on optimizing).
 
 | Number of Vertices| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
