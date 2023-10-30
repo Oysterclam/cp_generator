@@ -7,7 +7,7 @@ Besides providing the only publicly available implemenation of the algorithm I a
 
 Firstly, Mitani did not prove that the edge-removing procedure in step 3 would always succeed. We provide a simple extension of their method that always succeeds: First, by the handshaking lemma, there are an even number of odd-degree vertices. Furthermore, removing a path between two odd-degree vertices turns both of them into even-degree vertices while preserving the parity of all other vertices. Thus, by removing paths between pairs of odd-vertices, we will be left with a graph where all vertices are even-degree. This observation was made in conjunction with Matthew Li.
 
-Secondly, Mitani uses a brute-force search to find mountain-valley assignment which satisfies Maekawa's Theorem. We improve slightly upon this procedure, by adapting the procedure in [[Bern and Hayes 1996]](http://graphics8.nytimes.com/packages/blogs/images/BernHayes-1.origami.SODA96.pdf). Note that the procedure only proves the existence of a satisfying assignment, so we still need to do some search to find it. However, the search space is greatly decreased by this procedure.
+Secondly, Mitani uses a brute-force search to find mountain-valley assignment which satisfies Maekawa's Theorem. We improve slightly upon this procedure, by adapting the procedure in [[Bern and Hayes 1996]](http://graphics8.nytimes.com/packages/blogs/images/BernHayes-1.origami.SODA96.pdf).
 
 Here is what the tkinter interface looks like as of now:
 
