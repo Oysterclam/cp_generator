@@ -19,11 +19,6 @@ I ran a hundred trials for each number of vertices, and it seems that the succes
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Success Rate | 100% | 96% | 49% | 43% | 44% | 32% | 31% | 20% | 13% | 10% | 6% |
 
-# Citations
-Bern, Marshall, and Barry Hayes. "The complexity of flat origami." In SODA, vol. 96, pp. 175-183. 1996.
-
-Mitani, Jun. "A method for designing crease patterns for flat-foldable origami with numerical optimization." Journal for Geometry and Graphics 15, no. 2 (2011): 195-201.
-
 # Examples
 
 Here is one sample of folding one of these randomly generated crease patterns. A lot of the folding patterns feel unfamiliar, really helps (slightly) expand your idea of how to fold things!
@@ -37,3 +32,8 @@ And here's the folded rendition:
 <p align="center">
 <img style="align = center" src="./examples/IMG_5739.jpg" width="200">
 </p>
+
+# Citations
+Bern, Marshall, and Barry Hayes. "The complexity of flat origami." In SODA, vol. 96, pp. 175-183. 1996.
+
+Mitani, Jun. "A method for designing crease patterns for flat-foldable origami with numerical optimization." Journal for Geometry and Graphics 15, no. 2 (2011): 195-201.
