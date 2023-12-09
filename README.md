@@ -28,7 +28,7 @@ Mitani, Jun. "A method for designing crease patterns for flat-foldable origami w
 
 Here is one sample of folding one of these randomly generated crease patterns. A lot of the folding patterns feel unfamiliar, really helps (slightly) expand your idea of how to fold things!
 
-![image 1](./examples/IMG_5738.png)
+![image 1](./examples/IMG_5738.jpg)
 
 
-![image 2](./examples/IMG_5739.png)
+![image 2](./examples/IMG_5739.jpg)
