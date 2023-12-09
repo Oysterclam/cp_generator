@@ -28,7 +28,7 @@ Here's the crease pattern:
     <img style="align = center" src="./examples/IMG_5738.jpg" width="200">
 </p>
 
-And here's the folded rendition:
+And here's the folded rendition (with some liberties taken in shaping):
 <p align="center">
 <img style="align = center" src="./examples/IMG_5739.jpg" width="200">
 </p>
